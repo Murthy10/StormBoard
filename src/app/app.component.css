@@ -1,0 +1,29 @@
+#flexContainer{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+.headerColor {
+  background: #fca834;
+}
+
+#header {
+}
+
+#footer {
+}
+
+#stormBoard {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
