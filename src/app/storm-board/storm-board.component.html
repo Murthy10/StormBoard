@@ -1,3 +1,5 @@
-<div *ngFor="let topic of topics">
-  <app-storm-card [topic]="topic"></app-storm-card>
+<div class="fourColumns">
+  <div *ngFor="let topic of topics" class="cardWith">
+    <app-storm-card [topic]="topic"></app-storm-card>
+  </div>
 </div>

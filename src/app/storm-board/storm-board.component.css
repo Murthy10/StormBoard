@@ -1,0 +1,9 @@
+.fourColumns{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.cardWith{
+  margin: 5px;
+  width: 24%;
+}
