@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { StormCardComponent } from './storm-card/storm-card.component';
 import { StormBoardComponent } from './storm-board/storm-board.component';
+import {MessageService} from "./message.service";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { StormBoardComponent } from './storm-board/storm-board.component';
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

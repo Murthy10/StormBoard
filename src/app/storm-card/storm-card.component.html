@@ -1,7 +1,7 @@
 <md-card class="cardWith">
+  <md-card-title>{{topic.name}}</md-card-title>
   <div *ngFor="let entry of topic.entries">
-    <md-card-title>{{topic.name}}</md-card-title>
-    <md-card-subtitle>{{entry.key}} {{entry.value}}</md-card-subtitle>
+    <md-card-subtitle>{{entry.key}} <div class="goRight">{{entry.value}}</div></md-card-subtitle>
   </div>
 </md-card>
 

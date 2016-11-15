@@ -57,9 +57,7 @@ var kafka = require('kafka-node'),
 
 
 consumer.on('message', function (message) {
-  io.emit(message);
+  io.emit('message', message);
   console.log(message);
 });
-
-
 
