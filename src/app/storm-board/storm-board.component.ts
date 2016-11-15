@@ -10,15 +10,7 @@ import {MessageService} from "../message.service";
 
 
 export class StormBoardComponent implements OnInit, OnDestroy {
-  topics: Topic[] = [
-    {name: "test", entries: [JSON.parse('{"key": "key", "value": 1}'), JSON.parse('{"key": "key", "value": 2}')]},
-    {name: "test", entries: [JSON.parse('{"key": "key", "value": 1}'), JSON.parse('{"key": "key", "value": 2}')]},
-    {name: "test", entries: [JSON.parse('{"key": "key", "value": 1}'), JSON.parse('{"key": "key", "value": 2}')]},
-    {name: "test", entries: [JSON.parse('{"key": "key", "value": 1}'), JSON.parse('{"key": "key", "value": 2}')]},
-    {name: "test", entries: [JSON.parse('{"key": "key", "value": 1}'), JSON.parse('{"key": "key", "value": 2}')]},
-    {name: "test", entries: [JSON.parse('{"key": "key", "value": 1}'), JSON.parse('{"key": "key", "value": 2}')]},
-    {name: "test", entries: [JSON.parse('{"key": "key", "value": 1}'), JSON.parse('{"key": "key", "value": 2}')]}
-  ];
+  topics: Topic[] = [];
 
   connection;
 
