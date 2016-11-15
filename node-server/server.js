@@ -48,7 +48,8 @@ var kafka = require('kafka-node'),
   consumer = new Consumer(
     client,
     [
-      {topic: 'results', partition: 0}
+      {topic: 'UserCount', partition: 0},
+      {topic: 'ObjectCount', partition: 0}
     ],
     {
       autoCommit: false
