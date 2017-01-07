@@ -49,6 +49,8 @@ var kafka = require('kafka-node'),
     client,
     [
       {topic: 'UserCount', partition: 0},
+      {topic: 'Suspicious', partition: 0},
+      {topic: 'AreaYes', partition: 0},
       {topic: 'ObjectCount', partition: 0}
     ],
     {
