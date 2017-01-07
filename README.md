@@ -29,3 +29,16 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Run all
+docker run -d --name osmstream -p 2181:2181 -p 9092:9092 osmstream
+docker run -d --name osmstorm -v /home/murthy/projects/java/storm/:/maped/ -p 8080:8080 osmstorm
+node node-server/server.js
+
+docker exec -it osmstorm bash
+java -jar target/storm-1.0-SNAPSHOT-jar-with-dependencies.jar 6000
+
+docker exec -it osmstream bash
+python3 /opt/OSMstream/test_diff.py 
+

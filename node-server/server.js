@@ -49,12 +49,13 @@ var kafka = require('kafka-node'),
     client,
     [
       {topic: 'UserCount', partition: 0},
-      {topic: 'Suspicious', partition: 0},
-      {topic: 'AreaYes', partition: 0},
-      {topic: 'ObjectCount', partition: 0}
+//      {topic: 'Suspicious', partition: 0},
+//      {topic: 'AreaYes', partition: 0},
+     {topic: 'ObjectCount', partition: 0}
     ],
     {
-      autoCommit: false
+      autoCommit: false,
+      fetchMaxBytes: 100000000
     }
   );
 
@@ -64,3 +65,6 @@ consumer.on('message', function (message) {
   console.log(message);
 });
 
+consumer.on('error', function (err) {
+  console.log(err);
+});
